@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Playfair+Display&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100&display=swap');
+* {
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    color: #37292c;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: rgb(55, 41, 44);
+    background-attachment: fixed;
+    background-color: rgb(217, 228, 245);
+    background-image: linear-gradient(315deg, rgb(217, 228, 245) 0%, rgb(245, 227, 230) 74%);
+}
+header a {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+header .logo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+header nav a {
+    margin: 0 10px;
+}
+
+.blog_section {
+    padding: 50px 15%;
+}
+.blog_section h1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.blog_section a {
+    text-decoration: underline;
+}
+.container {
+    padding: 10px 15%;
+}
+.container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.col1 {
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+.col1 h1 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.col1 .header-card {
+    display: flex;
+    gap: 20px;
+}
+.col1 .header-card span {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.3rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.footer span {
+    font-size: 12px;
+}
+
+.container .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+@media (max-width : 600px) {
+    header {
+        flex-direction: column;
+        height: 100px;
+    }
+    header .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        
+    }
+   
+}
+@media (max-width : 1200px) {
+    .container {
+        padding: 0 5%;
+    }
+}
