@@ -47,11 +47,23 @@ header nav a {
 
 .blog_section {
     padding: 50px 15%;
+    position: relative;
 }
 .blog_section h1 {
     margin-bottom: 10px;
     font-weight: 500;
 }
+/* .content::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 30px;
+    background: #00BA74;
+    transform: translateY(-50%);
+    left: 240px;
+    top: 51%;
+} */
+
 .blog_section a {
     text-decoration: underline;
 }
@@ -60,8 +72,10 @@ header nav a {
 }
 .container .row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
     gap: 20px;
+    max-width: 1700px;
 }
 
 .col1 {
@@ -70,6 +84,10 @@ header nav a {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 8px;
+    cursor: pointer;
+}
+.col1:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 .col1 h1 {
     font-weight: 500;
